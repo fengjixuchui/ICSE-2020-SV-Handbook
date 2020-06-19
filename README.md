@@ -17,10 +17,12 @@ a PR (Pull Request). We will do our best to update this document up to date.
 
 1. [Understanding Virtual ICSE](#understanding-virtual-icse)
 1. [ICSE Live! Team](#icse-live-team)
+1. [SV Shift Plan](#sv-shift-plan)
 1. [SV Types](#sv-types)
 1. [SV Chairs](#sv-chairs)
 1. [Slack for All Communication](#slack-for-all-communication)
 1. [Description of SV Tasks](#description-of-sv-tasks)
+1. [Example Scenario](#example-scenario)
 1. [FAQs](#faqs)
 
 ## Understanding Virtual ICSE
@@ -47,13 +49,28 @@ confused with the ones of Live! Team.
 To understand how the ICSE Live! Teams operate, see
 [this](https://github.com/crista/icse2020-live).
 
+## SV Shift Plan
+
+We run three shifts for 24 hours, 8-hour each.
+
+- Pacific time shift: 22:00 - 6:00 UTC
+    - This includes the Pacific time band (00:00 - 03:00 UTC)
+    - SVs here will work with the Pacific team.
+- Indian time shift: 06:00 - 14:00 UTC
+    - This includes the Indian time band (07:00 - 10:00 UTC)
+    - SVs here will work with the Indian team.
+- Atlantic time shift: 14:00 - 22:00 UTC
+    - This includes the Atlantic time band (15:00 - 18:00 UTC)
+    - SVs here will work with the Atlantic team.
+
 ## SV Types
 
 Unlike traditional conferences, we divide SVs into two groups: online SVs, and
 offline SVs.
 
 - *Online SVs* work closely with a regional [ICSE Live!
-  team](#icse-live-team). We will assign Online SVs based on which time band
+  team](#icse-live-team). Online SVs will work in one of the three
+  [shifts](#sv-shift-plan). We will assign Online SVs based on which time band
   they belong to. For example, SVs in the Pacific time band will work with the
   Pacific team.
 
@@ -64,10 +81,10 @@ offline SVs.
 ## SV Chairs
 
 SV chairs lead the overall organization of SVs and interface with the general
-chair and live teams. Contact SV chairs in your time band.
+chair and live teams. Contact the SV chair in your time band whenever necessary.
 
-- Pacific Time Band: [FIXME](FIXME)
-- Indian (Asian) Time Band: [Sang Kil Cha](https://softsec.kaist.ac.kr/~sangkilc/)
+- Pacific Time Band: [Sang Kil Cha](https://softsec.kaist.ac.kr/~sangkilc/)
+- Indian (Asian) Time Band: [José Miguel Rojas](http://jmrojas.github.io/)
 - Atlantic Time Band: [Hamid Bagheri](https://cse.unl.edu/~hbagheri/)
 
 ## Slack for All Communication
@@ -81,9 +98,9 @@ SVs.
 Please join the following channels ASAP.
 
 - `#sv-general` is the main form of communication.
-- `#sv-pacific` is ... (TODO: let's see if these are necessary)
-- `#sv-indian` is ...
-- `#sv-atlantic` is ...
+- `#sv-pacific` is for online SVs in the Pacific shift.
+- `#sv-indian` is for online SVs in the Indian shift.
+- `#sv-atlantic` is for online SVs in the Atlantic shift.
 
 ### Slack Display Name
 
@@ -97,41 +114,80 @@ Both online and offline SVs have their own expected tasks.
 
 ### Online SV
 
-#### Live Casting Helper
+#### Helping Live Casting
 
-We will assign two live casting helpers per session. If there are three parallel
-sessions at the same time, we will assign a total of six SVs for this task.
-
-Live casting helpers are in charge of the followings:
 - Make sure all the speakers are connected before a session start.
 - Keep track of the time and let the session chair know (via Slack) if a talk
   goes too long.
 - Arrange questions from Slack and Slido and give them to the session chair.
+- Check if all the attendees are registered (check free riders).
 
-#### Help Desk Manager
+#### Managing 24-hour Help Desk
 
-We will assign one or two SV(s) for managing a virtual help desk. The help desk
-runs for 8 hours for each time band.
+We manage a virtual help desk, which runs for 24 hours through the [three
+shifts](#sv-shift-plan):
 
-- Pacific time band: 00:00 - 8:00 UTC
-- Indian time band: 08:00 - 16:00 UTC
-- Atlantic time band: 16:00 - 24:00 UTC
+- Pacific time shift: 22:00 - 6:00 UTC
+- Indian time shift: 06:00 - 14:00 UTC
+- Atlantic time shift: 14:00 - 22:00 UTC
 
-The main role of help desk manager is to handle FAQs during the live
-broadcasting.
+SVs should handle questions and troubleshoot frequently occuring problems (such
+as audio/video issues) with speakers and participants.
 
-(TODO: fill me)
+#### Using Social Media
 
-#### Social Media Helper
-
-We will assign zero or one SV (depending on the resource). The main role of
-social media helper is to advertise talks on social media. You can use your
-personal account, or create a new one just for ICSE.
+SVs should also advertise talks on social media whenever it is possible. You can
+use your personal account, or create a new one just for ICSE.
 
 The main conference hashtag is `#icse2020`.
 
 ### Offline SV
 
+Offline SVs work offline to help edit and upload videos to youtube.
+
 (TODO: fill me)
 
+## Example Scenario
+
+This example shows how each SV will do during an 8-hour-long shift. We assume
+there are 6 SVs (SV0, SV1, ..., SV5) working concurrently during the shift.
+
+- `T0`: 1 hour before casting
+    * All the SVs (SV0, ..., SV5)
+        - Join the `#help` channel of Slack, and handle questions.
+        - Join the virtual room (channel) of Slack that you are assigned to.
+        - Know the names of your session chairs.
+
+- `T1`: Live casting starts
+    * SV0, SV1, SV2 (one SV per each parallel session)
+        - Monitor questions in Slack and Slido.
+        - For each talk, summarize questions and pass them to the session chair
+          via Slack.
+        - Monitor the time of each talk and let the session chair know if the
+          talk goes too long.
+    * SV3, SV4, SV5
+        - Take questions from the `#help` channel.
+        - If necessary, you will make an individual connection with a person and
+          troubleshoot their problems (mostly audio/video issues).
+        - If you have spare time, then advertise talks on social media.
+
+- `T2`: Live casting runs (same as T1)
+
+- `T3`: Live casting runs (same as T1)
+
+- `T4`: No live casting
+    * One SV (e.g., SV0) will take care of the `#help` channel from now on until
+      the end of T7.
+
+- `T5`: No live casting (same as T4)
+- `T6`: No live casting (same as T4)
+- `T7`: No live casting (same as T4)
+
 ## FAQs
+
+- When do my duties finish?
+    - We expect you to be available during your shift (i.e., for 8 hours). If
+      your main role is end, then we will assign you something else. Please
+      remain online in Slack.
+
+- (TODO: FILL ME)
